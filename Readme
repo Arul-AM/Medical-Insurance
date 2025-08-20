@@ -1,1 +1,64 @@
 
+
+# Medical Insurance Prediction Project
+
+## Overview
+This project predicts **medical insurance charges** using machine learning models. It includes exploratory data analysis, feature engineering, model training, tracking with MLflow, and a Streamlit web UI for user-friendly predictions.
+
+## Features
+- Data loading and visualization
+- Multiple regression models: Linear Regression, Ridge, Lasso, Random Forest, XGBoost
+- Model tracking and metric logging with MLflow
+- Preprocessing pipelines with OneHotEncoder, StandardScaler
+- End-to-end prediction pipeline, including UI (Streamlit)
+- Automated tests using pytest
+
+## Requirements
+- Python 3.12+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- mlflow
+- xgboost
+- streamlit
+- pytest
+
+Install requirements with:
+```
+pip install pandas numpy scikit-learn matplotlib seaborn mlflow xgboost streamlit pytest
+```
+
+## Usage
+
+1. **Data Preparation**
+   - Place `medicalinsurance.csv` in the project folder.
+
+2. **Training and Experiment Tracking**
+   - Run the notebook or script to train and evaluate models. 
+   - Metrics (RMSE, MAE, R²) will be logged to MLflow.
+
+3. **Web Interface**
+   - Start the Streamlit UI:
+     ```
+     streamlit run app.py
+     ```
+   - Enter patient details in the web interface to predict insurance cost.
+
+4. **Testing**
+   - Run built-in tests using:
+     ```
+     pytest
+     ```
+
+## Project Structure (Typical)
+```plaintext
+Guvi_Paoject.ipynb
+medicalinsurance.csv
+app.py           # (Optional) Streamlit web app
+README.txt
+requirements.txt
+```
+
+
